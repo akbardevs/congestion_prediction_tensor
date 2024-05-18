@@ -51,7 +51,7 @@ batch_size = 10  # Reduced from 20
 
 train_datagen = ImageDataGenerator(rescale=1./255)
 train_generator = train_datagen.flow_from_directory(
-    'path_to_train_directory',
+    './train',
     target_size=(720, 1280),
     batch_size=batch_size,
     class_mode='binary')
